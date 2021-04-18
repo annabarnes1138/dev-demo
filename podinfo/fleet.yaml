@@ -1,6 +1,0 @@
-helm:
-  chart: podinfo
-  repo: https://stecky.github.io/podinfo
-  version: ">=1.0.0-alpha"
-values:
-    replicas: 2
