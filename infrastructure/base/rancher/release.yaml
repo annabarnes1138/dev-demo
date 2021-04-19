@@ -13,7 +13,7 @@ spec:
         namespace: flux-system
       version: 2.5.7
   dependsOn:
-  - name: cert-manager
+  - name: cert-manager/cert-manager
   interval: 5m
   releaseName: rancher-server
   values:
