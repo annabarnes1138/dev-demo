@@ -13,7 +13,8 @@ spec:
         name: rancher
       version: 2.5.7
   dependsOn:
+    - name: sources
     - name: cert-manager
-  interval: 1h0m0s
+  interval: 5m
   values:
     hostname: rancher.topgolf.com

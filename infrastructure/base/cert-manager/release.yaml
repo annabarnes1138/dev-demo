@@ -13,7 +13,8 @@ spec:
         name: jetstack
       version: v1.0.4
   dependsOn:
+    - name: sources
     - name: ingress-nginx
-  interval: 1h0m0s
+  interval: 5m
   values:
     installCRDs: true
