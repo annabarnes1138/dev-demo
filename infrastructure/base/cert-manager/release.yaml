@@ -12,8 +12,6 @@ spec:
         name: jetstack
         namespace: flux-system
       version: v1.0.4
-  dependsOn:
-  - name: ingress-nginx/ingress-nginx
   interval: 5m
   releaseName: certificate-manager
   values:
