@@ -3,7 +3,6 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: rancher
-  namespace: cattle-system
 spec:
   chart:
     spec:
@@ -16,5 +15,6 @@ spec:
   dependsOn:
     - name: cert-manager
   interval: 5m
+  releaseName: rancher-server
   values:
     hostname: rancher.topgolf.com

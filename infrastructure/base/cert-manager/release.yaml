@@ -3,7 +3,6 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: cert-manager
-  namespace: cert-manager
 spec:
   chart:
     spec:
@@ -16,5 +15,6 @@ spec:
   dependsOn:
     - name: ingress-nginx
   interval: 5m
+  releaseName: certificate-manager
   values:
     installCRDs: true
