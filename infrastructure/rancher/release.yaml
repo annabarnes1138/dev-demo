@@ -12,7 +12,7 @@ spec:
         kind: HelmRepository
         name: rancher
       version: 2.5.7
-    dependsOn:
+  dependsOn:
     - name: cert-manager
   interval: 1h0m0s
   values:
