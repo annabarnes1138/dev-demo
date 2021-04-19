@@ -2,9 +2,8 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
 metadata:
-  name: rancher
-  namespace: flux-system
+  name: jetstack
 spec:
   interval: 1h0m0s
-  url: https://releases.rancher.com/server-charts/stable
+  url: https://charts.jetstack.io
 
